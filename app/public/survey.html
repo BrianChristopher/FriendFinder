@@ -1,14 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Super Friend Finder</title>
+    <!-- This is bootstrap. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- This is jquery. -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1>This is the survey page.</h1>
-    <div><a href="/">HOME</a></div>
-    <div><a href="/api/superFriends">Superfriends JSON</a></div>
+
+
+
+
+
+
+
+    <div class="container m-4"></div>
+
+    <div class="container">
+        <h2>Rate each statement below to find your Super Friend.</h2>
+        <p>1-Stongly Disagree | 2-Disagree | 3-Neutral | 4-Agree | 5-Strongly Agree</p>
+
+        <div class="container">
+            <form action="">
+                <div class="row">
+                    <h4>1. Cheeseburgers are best.</h4>
+                </div>
+                <div class="row form-group" id="trait0">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait0" value="1">
+                        <label class="form-check-label">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait0" value="2">
+                        <label class="form-check-label">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait0" value="3">
+                        <label class="form-check-label">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait0" value="4">
+                        <label class="form-check-label">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait0" value="5">
+                        <label class="form-check-label">5</label>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <h4>2. Beer is awesome.</h4>
+                </div>
+                <div class="row form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait1" value="1">
+                        <label class="form-check-label">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait1" value="2">
+                        <label class="form-check-label">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait1" value="3">
+                        <label class="form-check-label">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait1" value="4">
+                        <label class="form-check-label">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait1" value="5">
+                        <label class="form-check-label">5</label>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <h4>3. Cats are fluffy.</h4>
+                </div>
+                <div class="row form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait2" value="1">
+                        <label class="form-check-label">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait2" value="2">
+                        <label class="form-check-label">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait2" value="3">
+                        <label class="form-check-label">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait2" value="4">
+                        <label class="form-check-label">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait2" value="5">
+                        <label class="form-check-label">5</label>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <h4>4. Dogs are love muffins.</h4>
+                </div>
+                <div class="row form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait3" value="1">
+                        <label class="form-check-label">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait3" value="2">
+                        <label class="form-check-label">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait3" value="3">
+                        <label class="form-check-label">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait3" value="4">
+                        <label class="form-check-label">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait3" value="5">
+                        <label class="form-check-label">5</label>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <h4>5. Star Trek > Star Wars.</h4>
+                </div>
+                <div class="row form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait4" value="1">
+                        <label class="form-check-label">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait4" value="2">
+                        <label class="form-check-label">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait4" value="3">
+                        <label class="form-check-label">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait4" value="4">
+                        <label class="form-check-label">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait4" value="5">
+                        <label class="form-check-label">5</label>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <h4>6. Pizza is a fabulous breakfast.</h4>
+                </div>
+                <div class="row form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait5" value="1">
+                        <label class="form-check-label">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait5" value="2">
+                        <label class="form-check-label">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait5" value="3">
+                        <label class="form-check-label">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait5" value="4">
+                        <label class="form-check-label">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait5" value="5">
+                        <label class="form-check-label">5</label>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <h4>7. La La Land was robbed at the Oscars.</h4>
+                </div>
+                <div class="row form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait6" value="1">
+                        <label class="form-check-label">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait6" value="2">
+                        <label class="form-check-label">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait6" value="3">
+                        <label class="form-check-label">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait6" value="4">
+                        <label class="form-check-label">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait6" value="5">
+                        <label class="form-check-label">5</label>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <h4>8. Everything is beautiful at the ballet.</h4>
+                </div>
+                <div class="row form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait7" value="1">
+                        <label class="form-check-label">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait7" value="2">
+                        <label class="form-check-label">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait7" value="3">
+                        <label class="form-check-label">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait7" value="4">
+                        <label class="form-check-label">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait7" value="5">
+                        <label class="form-check-label">5</label>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <h4>9. Hurricanes blow.</h4>
+                </div>
+                <div class="row form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait8" value="1">
+                        <label class="form-check-label">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait8" value="2">
+                        <label class="form-check-label">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait8" value="3">
+                        <label class="form-check-label">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait8" value="4">
+                        <label class="form-check-label">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait8" value="5">
+                        <label class="form-check-label">5</label>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <h4>10. Facebook sucks.</h4>
+                </div>
+                <div class="row form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait9" value="1">
+                        <label class="form-check-label">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait9" value="2">
+                        <label class="form-check-label">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait9" value="3">
+                        <label class="form-check-label">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait9" value="4">
+                        <label class="form-check-label">4</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="trait9" value="5">
+                        <label class="form-check-label">5</label>
+                    </div>
+
+                </div>
+                <button type="submit" class="btn btn-primary submit">Submit responses and find your Super
+                    Friend</button>
+            </form>
+        </div>
+
+
+
+
+
+        <div class="container p-4"><a href="/">HOME</a> | <a href="/api/superFriends">Superfriends JSON</a> </div>
+
+
+
+
+        <script type="text/javascript">
+            // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+            // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+            // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+            // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+            console.log("The script is running.")
+
+            $(".submit").on("click", function (event) {
+                event.preventDefault();
+
+                console.log("The submit button clicked.")
+
+                // Here we grab the form elements
+                var userResponse = {
+                    trait0Value: $("input[name='trait0']:checked").val(),
+                    trait1Value: $("input[name='trait1']:checked").val(),
+                    trait2Value: $("input[name='trait2']:checked").val(),
+                    trait3Value: $("input[name='trait3']:checked").val(),
+                    trait4Value: $("input[name='trait4']:checked").val(),
+                    trait5Value: $("input[name='trait5']:checked").val(),
+                    trait6Value: $("input[name='trait6']:checked").val(),
+                    trait7Value: $("input[name='trait7']:checked").val(),
+                    trait8Value: $("input[name='trait8']:checked").val(),
+                    trait9Value: $("input[name='trait9']:checked").val()
+
+                };
+
+                console.log(userResponse);
+
+                // This line is the magic. It"s very similar to the standard ajax function we used.
+                // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+                // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+                // depending on if a tables is available or not.
+
+                //   $.post("/api/tables", newReservation,
+                //     function(data) {
+
+                //       // If a table is available... tell user they are booked.
+                //       if (data) {
+                //         alert("Yay! You are officially booked!");
+                //       }
+
+                //       // If a table is available... tell user they on the waiting list.
+                //       else {
+                //         alert("Sorry you are on the wait list");
+                //       }
+
+                //       // Clear the form when submitting
+                //       $("#reserve-name").val("");
+                //       $("#reserve-phone").val("");
+                //       $("#reserve-email").val("");
+                //       $("#reserve-unique-id").val("");
+
+                //     });
+
+            });
+
+        </script>
+
 </body>
+
 </html>
