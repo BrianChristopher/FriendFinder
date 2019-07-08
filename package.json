@@ -1,0 +1,26 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Homework for UCF Coding Camp. This is a web-app similar to a dating service.",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrianChristopher/FriendFinder.git"
+  },
+  "keywords": [
+    "superfriends"
+  ],
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrianChristopher/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/BrianChristopher/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
